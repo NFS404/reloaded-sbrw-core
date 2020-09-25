@@ -96,7 +96,7 @@
                         <always>false</always>
                         <dirty>-dirty</dirty>
                     </gitDescribe>
-                    <useNativeGit>false</useNativeGit>
+                    <useNativeGit>true</useNativeGit>
                 </configuration>
             </plugin>
         </plugins>
