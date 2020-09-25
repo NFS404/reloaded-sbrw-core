@@ -5,15 +5,22 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
+    paths:
+      - src/**
+      - xsd/**
+      - xsd-final/**
   pull_request:
-    branches: [ master ]
-
+    branches:
+      - master
+    paths:
+      - src/**
+      - xsd/**
+      - xsd-final/**
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Set up JDK 1.11
@@ -21,7 +28,7 @@ jobs:
       with:
         java-version: 1.11    
     - name: Build with Maven
-      run: git fetch --all --tags && mvn clean package -e "-Dnfs.core.stage=default"
+      run: git fetch --all --tags && mvn clean package -e "-Dnfs.core.stage=production"
     - name: Upload Artifacts
       uses: actions/upload-artifact@v2
       with:
