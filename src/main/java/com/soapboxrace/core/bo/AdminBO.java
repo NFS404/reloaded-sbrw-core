@@ -109,7 +109,7 @@ public class AdminBO {
 				}
 
                 banDAO.delete(existingBan);
-                openFireSoapBoxCli.send(XmppChat.createSystemMessage("The user has been unbanned, I hope we will not have to ban it once again."), personaId);
+                openFireSoapBoxCli.send(XmppChat.createSystemMessage("The user has been unbanned, I hope we will not have to ban it once again!"), personaId);
 
                 break;
             default:
