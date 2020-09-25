@@ -35,9 +35,11 @@ jobs:
         restore-keys: ${{ runner.os }}-m2
     - name: Build with Maven
       run: git fetch --all --tags && mvn clean package -e "-Dnfs.core.stage=production"
+    - name: Set tag name
+      run: echo ::set-env name=TAG::$(git describe --tags)
     - name: Upload Artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: ArtifactBuild
+        name: Core-thorntail-${{ TAG }}
         path: |
               ${{ github.workspace }}/target/core-thorntail.jar
