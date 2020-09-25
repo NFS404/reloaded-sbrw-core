@@ -1,5 +1,5 @@
 <p align="center">
-  <img style="border-radius:20px;" src="https://image.noelshack.com/fichiers/2020/39/5/1601065984-sbrwr-512.jpg" />
+  <img style="border-radius:20px;" src="https://image.noelshack.com/fichiers/2020/39/5/1601066281-sbrwr-512.jpg" />
 </p>
 
 [![Discord](https://img.shields.io/discord/311140210018615310.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/TUsXvVp)
