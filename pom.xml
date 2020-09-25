@@ -92,7 +92,7 @@
                     <generateGitPropertiesFilename>${project.build.outputDirectory}/git.properties</generateGitPropertiesFilename>
                     <format>json</format>
                     <gitDescribe>
-                        <skip>true</skip>
+                        <skip>false</skip>
                         <always>false</always>
                         <dirty>-dirty</dirty>
                     </gitDescribe>
