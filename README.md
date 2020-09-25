@@ -15,7 +15,7 @@ The server is an application built to run on the [Wildfly](https://wildfly.org) 
 system. All code is written for Java 8.
 
 ## Installation
-Installation documentation is WIP.
+Installation documentation later.
 ## Contributing
 Want to make a contribution? It's easy - just follow these steps:
 1. Fork this repository if you haven't done so already
