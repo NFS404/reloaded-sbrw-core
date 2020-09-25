@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://cdn.soapboxrace.world/assets/sbrw-512.png" />
+  <img style="border-radius:20px;" src="https://image.noelshack.com/fichiers/2020/39/5/1601065984-sbrwr-512.jpg" />
 </p>
 
 [![Discord](https://img.shields.io/discord/311140210018615310.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/TUsXvVp)
@@ -15,7 +15,7 @@ The server is an application built to run on the [Wildfly](https://wildfly.org) 
 system. All code is written for Java 8.
 
 ## Installation
-Installation documentation later.
+Installation documentation is WIP.
 ## Contributing
 Want to make a contribution? It's easy - just follow these steps:
 1. Fork this repository if you haven't done so already
