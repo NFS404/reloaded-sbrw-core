@@ -64,7 +64,7 @@ public class AdminBO {
         switch (commandInfo.action) {
             case BAN:
                 if (banDAO.findByUser(personaEntity.getUser()) != null) {
-                    openFireSoapBoxCli.send(XmppChat.createSystemMessage("Oh no, this user is already banned noob..."), personaId);
+                    openFireSoapBoxCli.send(XmppChat.createSystemMessage("Oh no, this user is already banned..."), personaId);
                     break;
                 }
 
