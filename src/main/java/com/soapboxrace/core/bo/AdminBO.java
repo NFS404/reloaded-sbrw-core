@@ -96,7 +96,7 @@ public class AdminBO {
             case UNBAN:
                 BanEntity existingBan;
                 if ((existingBan = banDAO.findByUser(personaEntity.getUser())) == null) {
-                    openFireSoapBoxCli.send(XmppChat.createSystemMessage("Why you wanna unban that user ? Isn't even banned !"), personaId);
+                    openFireSoapBoxCli.send(XmppChat.createSystemMessage("Why you wanna unban that user ? Isn't even banned lol !"), personaId);
                     break;
                 }
 
