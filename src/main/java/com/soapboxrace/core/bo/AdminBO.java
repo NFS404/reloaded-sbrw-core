@@ -82,7 +82,7 @@ public class AdminBO {
                 break;
             case KICK:
                 sendKick(personaEntity.getUser().getId(), personaEntity.getPersonaId());
-                openFireSoapBoxCli.send(XmppChat.createSystemMessage("Kicked out the ass of the user."), personaId);
+                openFireSoapBoxCli.send(XmppChat.createSystemMessage("Kicked out the butt of the user."), personaId);
 
 				if(parameterBO.getStrParam("DISCORD_WEBHOOK_BANREPORT_URL") != null) {
 					discord.sendMessage(constructMsg_ds.replace("%s", "kicked"), 
