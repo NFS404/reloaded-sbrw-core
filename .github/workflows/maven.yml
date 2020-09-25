@@ -21,7 +21,7 @@ jobs:
       with:
         java-version: 1.11
     - name: test
-      run: git describe --tags        
+      run: git status        
     - name: Build with Maven
       run: mvn clean package -e "-Dnfs.core.stage=default"
     - name: Upload Artifacts
