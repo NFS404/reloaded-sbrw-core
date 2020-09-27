@@ -50,6 +50,12 @@ public class AdminBO {
     @EJB
     private OpenFireSoapBoxCli openFireSoapBoxCli;
 
+    public void sendChatCommand(Long personaId, String command, String personaName) {
+        String personaToBan = command.split(" ")[1];
+        PersonaEntity personaEntity = personaDao.findByName(personaToBan);
+		sendCommand(personaId, personaEntity.getPersonaId(), command);
+	}
+
     public void sendCommand(Long personaId, Long abuserPersonaId, String command) {
         CommandInfo commandInfo = CommandInfo.parse(command);
         PersonaEntity personaEntity = personaDao.findById(abuserPersonaId);
